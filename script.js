@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let selectedChocolates = [];
 
-    // Dynamically create chocolate options
+    
     chocolateOptions.forEach((chocolate, index) => {
         const chocolateDiv = document.createElement("div");
         chocolateDiv.classList.add("chocolate");
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chocolateOptionsContainer.appendChild(chocolateDiv);
     });
 
-    // Function to add chocolate to the custom pack
+    
     function addChocolateToPack(chocolate, index) {
         if (selectedChocolates.length < 8) {
             selectedChocolates.push(chocolate);
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to update the custom pack and total price
+    
     function updateCustomPack() {
         selectedChocolatesContainer.innerHTML = "";
         let totalPrice = 0;
